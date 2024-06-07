@@ -1,0 +1,20 @@
+{
+  "name": "streamlit_execute_run",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "streamlit-component-lib": "^2.0.0",
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.1"
+  }
+}
