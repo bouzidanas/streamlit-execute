@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+streamlit_execute/__init__.py
+streamlit_execute/example.py
+streamlit_execute.egg-info/PKG-INFO
+streamlit_execute.egg-info/SOURCES.txt
+streamlit_execute.egg-info/dependency_links.txt
+streamlit_execute.egg-info/requires.txt
+streamlit_execute.egg-info/top_level.txt

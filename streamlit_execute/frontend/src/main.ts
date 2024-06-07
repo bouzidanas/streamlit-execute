@@ -29,18 +29,18 @@ async function evaluatePython(id: string, code: string) {
     pyodide.runPython('sys.stdout = io.StringIO()');
     if (id === "__setup__") return;
     if (id === "__init__") {
-      Streamlit.setComponentValue({id: id, status: "success"});
+      Streamlit.setComponentValue({id: id, code: code, status: "success", value: output, stdout: stdout});
     }
     else {
-      sendMessageToStreamlitComponent(id, {code: code, status: "success", value: output, stdout: stdout});
+      sendMessageToStreamlitComponent(id, {id: id, code: code, status: "success", value: output, stdout: stdout});
     }
   } catch (err) {
     if (id === "__setup__") return;
     if (id === "__init__") {
-      Streamlit.setComponentValue({id: id, status: "error"});
+      Streamlit.setComponentValue({id: id, code: code, status: "error", value: err, stdout: ""});
     }
     else {
-      sendMessageToStreamlitComponent(id, {code: code, status: "error", value: err, stdout: ""});
+      sendMessageToStreamlitComponent(id, {id: id, code: code, status: "error", value: err, stdout: ""});
     }
   }
 }

@@ -6,11 +6,11 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
-    name="streamlit-custom-component",
-    version="0.0.1",
+    name="streamlit-execute",
+    version="0.0.3",
     author="Anas Bouzid",
-    author_email="",
-    description="Streamlit component that allows you to do X",
+    author_email="anasbouzid@gmail.com",
+    description="Streamlit component that allows you to execute Python code using Pyodide.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="",

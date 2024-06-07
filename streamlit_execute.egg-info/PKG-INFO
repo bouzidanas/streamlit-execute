@@ -1,3 +1,17 @@
+Metadata-Version: 2.1
+Name: streamlit-execute
+Version: 0.0.3
+Summary: Streamlit component that allows you to execute Python code using Pyodide.
+Home-page: 
+Author: Anas Bouzid
+Author-email: anasbouzid@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: devel
+License-File: LICENSE
+
 >[!WARNING]
 > This is a work in progress. This package currently only supports python code execution. The goal is to support other languages as well.
 
@@ -83,3 +97,5 @@ st.write(response_add1)
 response_add2 = se.run("a=2\na", target_key="interpreter2")
 st.write(response_add2)
 ```
+
+
